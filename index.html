@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let b, i, a;
+        let result;
+        //Задание №1
+        // function max() {
+        //     a = +prompt('введите число')
+        //     b = +prompt('введите втрое число')
+        //     if (isNaN(a) || isNaN(b)) {
+        //         alert('Ошибка данных!!!')
+        //     } else {
+        //         result = a > b ? a : b;
+        //     }
+        //     alert(result)
+        // } max()
+        //--------------------------------------------------------------
+        //Задание №2
+        // function power() {
+        //     a = +prompt('Введите возводимое число')
+        //     b = +prompt('введите степень')
+        //     result = 1;
+        //     i = 0;
+        //     if (isNaN(a) || isNaN(b)) {
+        //         alert('Ошибка')
+        //     } else if (b > 0) {
+        //         while (i < b) {
+        //             result = result * a
+        //             i++
+        //         }
+        //     } else if (b < 0) {
+        //         while (i > b) {
+        //             result = result / a
+        //             i--
+        //         }
+        //     }
+        //     alert(result);
+        // } power()
+        //--------------------------------------------------------------
+        //Задание №3
+        // function count(a, b, mark) {
+        //     a = +prompt('введите первое число')
+        //     b = +prompt('введите второе число')
+        //     mark = prompt('введите действие')
+        //     switch (mark) {
+        //         case "*":
+        //             return a * b;
+        //         case "+":
+        //             return a + b;
+        //         case "-":
+        //             return a - b;
+        //         case "/":
+        //             if (b !== 0) {
+        //                 return a / b;
+        //             } else {
+        //                 return "не делится на нуль";
+        //             }
+        //     }
+        // } alert(count())
+        //--------------------------------------------------------------
+        //Задание №4
+        // function simple() {
+        //     a = +prompt('Введите число для проверки');
+        //     b = true;
+        //     for (let i = 2; i < a; i++) {
+        //         if (a % i === 0) {
+        //             b = false;
+        //             break;
+        //         }
+        //     }
+        //     alert(b)
+        // } simple()
+        //--------------------------------------------------------------
+        //Задание №5
+        // function table() {
+        //     a = prompt("Введите число для вывода таблицы");
+        //     b = '';
+        //     if (isNaN(a)) {
+        //         alert('Ошибка')
+        //     } else {
+        //         for (var i = 2; i < 10; i++) {
+        //             b += a + "*" + i + "=" + a * i + '\n';
+        //         }
+        //     } alert(b);
+        // } table()
+        //--------------------------------------------------------------
+        //Задание №7
+        // function count() {
+        //     a = [20, 40, 77, 53, 75];
+        //     b = 0;
+        //     for (i = 0; i < a.length; i++) {
+        //         b += a[i];
+        //     }
+        //     return b;
+        // }
+        // console.log(count())
+        //--------------------------------------------------------------
+        //Задание №8 
+        // function get_max(num1, num2, num3) {
+        //     a = Math.max(num1, num2, num3);
+        //     return a;
+        // }
+
+        // alert(get_max(20, 38, 51));
+        //--------------------------------------------------------------
+        //Задание №9
+        // function range() {
+
+        // }
+        // a = +prompt('Начало диапазона',)
+        // b = +prompt('Конец диапазона',)
+        // if (!isNaN(a) && !isNaN(b)) {
+        //     a = Math.ceil(a);
+        //     if (0 == a % 2) {
+        //         ++a;
+        //     };
+        //     for (i = a; i <= b; i += 2) {
+        //         console.log(i);
+        //     };
+        // }
+        // else {
+        //     alert('Некорректный ввод');
+        // }; range()
+        //--------------------------------------------------------------
+        //Задание №10
+        // function formatDate(date) {
+
+        //     let day = date.getDate() + 1;
+        //     if (day < 10) day = '0' + day;
+
+        //     let month = date.getMonth() + 1;
+        //     if (month < 10) month = '0' + month;
+
+        //     let year = date.getFullYear();
+        //     if (year < 10) year = '0' + year;
+        //     if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+        //         alert('Високосный год')
+        //     } else {
+        //         alert('Обычный обычный')
+        //     }
+        //     return 'Завтра:' + day + '.' + month + '.' + year;
+
+        // }
+        // result = new Date();
+        // alert(formatDate(result));
+    </script>
+    <!-- ? 1) В задании номер 10 столкнулся с проблемой при вводе в  new Date() последнего числа месяца к примеру: 2021 03 30 выводит мне 31 03 2021 хотя должен высети 01 04 2021 я так и не понял как это исправить
+    ? 2) в задании №6 необходимо заменить операто % на функцию реализующую его работу , я понимаю как работает оператор , но не понимаю как прописать его работу -->
+</body>
+
+</html>
